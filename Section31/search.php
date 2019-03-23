@@ -12,6 +12,10 @@
         <?php  endwhile;?>
         <?php get_404_template(); endif;?>
 
+        <div class="jumbotron">
+             <?php next_posts_link(' Mais antigos'); ?><?php previous_posts_link('Mais novos')?>
+        </div>
+
   </div>
   <?php get_sidebar();?>
   <?php get_footer(); ?>
