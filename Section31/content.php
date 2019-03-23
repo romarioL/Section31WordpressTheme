@@ -3,6 +3,7 @@
  ?>
  <div class="jumbotron animated bounceInLeft">
  <h3><?php the_title();?></h3>
+ <?php the_post_thumbnail('post-thumbnail', array('class' => 'post-image')); ?>
  <?php  the_content();?>
  </div>
 

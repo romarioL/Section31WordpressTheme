@@ -1,4 +1,10 @@
-<?php register_nav_menus(array(
+<?php
+
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size(1280,  720, true);
+
+
+ register_nav_menus(array(
    'principal' => __('menu principal', 'section31')
 )); 
 
@@ -20,6 +26,8 @@ add_filter('next_posts_link_attributes', 'posts_link_attributes');
  	return 'class="button-primary"';
  }
 
+
+ require get_template_directory(). '/inc/customizer.php';
 
 ?>
 
